@@ -1,0 +1,78 @@
+*{font-family: 'Ubuntu', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+.fa-plus-square:before {
+    content: "\f0fe";
+    font-size: 2em;
+}
+#header {
+    margin: 30px auto;
+    text-align: center;
+}
+#list{
+    margin:3em 1em;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+display: flex;}
+#list-input{
+    text-align: center;
+    width:50%;
+}
+#filter-options{
+    margin:0px 30px;
+    height: 30px;
+}
+#add-btn{
+background-color: lightsalmon;
+color: brown;
+padding:2px 5px;
+}
+.trash{
+    background-color:red;
+    color:maroon;
+    position:absolute;
+    height: 100%;
+    width:3.5em;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.trash:hover{
+    color:red;
+    background-color:maroon;
+}
+.completed{
+    height: 100%;
+    width:3.5em;
+    position:absolute;
+    right:3.5em;
+    background-color: limegreen;
+    color:beige;
+}
+.completed:hover{
+    color: limegreen;
+    background-color:beige;
+}
+.item{
+    font-size:1em;
+    margin:0 auto;
+    margin-top:1em;
+    padding:2% 2%;
+    width:70%;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    border:1px maroon solid;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+#add-btn:hover{
+    color: lightsalmon;
+    background: brown
+}

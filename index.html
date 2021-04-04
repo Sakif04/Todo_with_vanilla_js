@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 id='header'>My TO DO LIST</h2>
+    </header>
+    <section id='list'>
+        <input id="list-input" type="text"><button id='add-btn'><i class="fas fa-plus"></i></button>
+        <div class="select">
+            <select name="todos" id="filter-options">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </section>
+    <section id="list-items">
+        <div class="item">track of records <button class="completed"><i class="fas fa-check"></i></button><button
+                class="trash"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="item">track of records <button class="completed"><i class="fas fa-check"></i></button><button
+                class="trash"><i class="fas fa-trash"></i></button>
+        </div>
+    </section>
+</body>
+
+</html>
