@@ -25,14 +25,19 @@ body {
     align-content: center;
 display: flex;}
 #list-input{
+    color:cadetblue;
+    font-size: 1em;
+    font-weight: 1000;
     text-align: center;
+    height: 3em;
     width:50%;
 }
 #filter-options{
     margin:0px 30px;
-    height: 30px;
+    height: 3.5em;
 }
 #add-btn{
+    width: 3em;
 background-color: lightsalmon;
 color: brown;
 padding:2px 5px;
@@ -51,7 +56,7 @@ padding:2px 5px;
     color:red;
     background-color:maroon;
 }
-.completed{
+.complete{
     height: 90%;
     right:0;
     top:50%;
@@ -62,9 +67,21 @@ padding:2px 5px;
     background-color: limegreen;
     color:beige;
 }
-.completed:hover{
+.complete:hover{
     color: limegreen;
     background-color:beige;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.slide{
+    transform: translateX(50%);
+    opacity:0.4;
+    transition-duration: 500ms;
+}
+i{
+    pointer-events: none;
 }
 .item{
     font-size:1em;
@@ -72,7 +89,7 @@ padding:2px 5px;
     margin-top:1em;
     padding:2% 2%;
     width:70%;
-    height: 3rem;
+    height: 1em;
     display: flex;
     justify-content: center;
     border:1px rgb(14, 2, 70) solid;
