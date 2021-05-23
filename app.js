@@ -4,7 +4,9 @@ const input = document.querySelector('#list-input');
 const filter = document.querySelector('#filter-options');
 
 const createItem = function (e) {
-    e.preventDefault();
+    
+    // 
+    if(e){ e.preventDefault();}
     let inputvalue = input.value;
     if (inputvalue) {
         let item = document.createElement('div');
@@ -12,7 +14,7 @@ const createItem = function (e) {
         item.className = 'item';
         item.innerHTML = `<h4>${inputvalue}</h4>
         <button class="complete"><i class="fas fa-check"></i></button>
-        <button class="trash"><i class="fas fa-trash"></i></button>`;
+        <button class="edit"><i class="fas fa-edit"></i></button>`;
         list.appendChild(item);
         input.value = '';
     }
@@ -34,9 +36,9 @@ const removeLocalItem = function (item) {
     } else {
         items = JSON.parse(localStorage.getItem('items'));
     }
-    console.log(items);
+   
     let index = items.indexOf(item);
-    console.log(index);
+    input.value=item;
     items.splice(index, 1);
     localStorage.setItem('items', JSON.stringify(items));
 }
@@ -68,11 +70,10 @@ const filterItems = function (e) {
 const buttonEffects = function (e) {
     let clickedElement = e.target;
 
-    if (clickedElement.className == 'trash') {
+    if (clickedElement.className == 'edit') {
         item = clickedElement.parentElement;
         item.classList.add('slide');
         text = item.querySelector('h4').innerText;
-        console.log(text);
         removeLocalItem(text);
 
         item.addEventListener("transitionend", () => {
@@ -97,7 +98,7 @@ const getItems = function () {
         element.className = 'item';
         element.innerHTML = `<h4>${item}</h4>
             <button class="complete"><i class="fas fa-check"></i></button>
-            <button class="trash"><i class="fas fa-trash"></i></button>`;
+            <button class="edit"><i class="fas fa-edit"> </i></button>`;
         list.appendChild(element);
 
     });
@@ -106,3 +107,11 @@ document.addEventListener('DOMContentLoaded', getItems);
 filter.addEventListener('click', filterItems);
 list.addEventListener('click', buttonEffects);
 addBtn.addEventListener('click', createItem);
+function enterButton(e){
+    f=e.key;
+    if (e.key=='Enter'){
+    createItem();
+    }
+}
+
+document.addEventListener('keydown', enterButton);
