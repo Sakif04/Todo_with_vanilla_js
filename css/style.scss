@@ -1,0 +1,147 @@
+@import "functions";
+@import "variables";
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: beige;
+    height: 100vh;
+}
+
+#tasklist {
+    background: $grotto;
+    #header {
+        margin: 30px auto;
+        font-size: 3rem;
+        text-align: center;
+    }
+    padding: 2rem;
+    width: 80vw;
+    margin: auto;
+    border: 0.3rem solid purple;
+    .fa-plus-square:before {
+        font-size: 2rem;
+    }
+
+    #list {
+        margin: 3rem 1rem;
+        text-align: center;
+        justify-self: center;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+
+        #add-btn {
+            border-radius: 0.5rem;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px 0px;
+            width: 4rem;
+            height: 4rem;
+            background-color: lightsalmon;
+            color: brown;
+            padding: 0.5rem 0.8rem;
+            &:hover {
+                color: lightsalmon;
+                background: brown;
+            }
+        }
+
+        #list-input {
+            border: none;
+            color: cadetblue;
+            font-size: 3rem;
+            font-weight: 1000;
+            text-align: center;
+            height: 4rem;
+            border-radius: 0.5rem;
+            margin: 0 0.5rem;
+            width: 70%;
+            &:focus {
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        }
+    }
+}
+
+#filter-options {
+    margin: 0px 30px;
+    height: 3.5rem;
+}
+
+.slide {
+    transform: translateX(50%);
+    opacity: 0.4;
+    transition-duration: 500ms;
+}
+i {
+    pointer-events: none;
+}
+.item {
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 2% 2%;
+    width: 70%;
+    padding: 2rem 1rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: $navy;
+    border: 1px rgb(14, 2, 70) solid;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    .btn {
+        padding: 0.3rem;
+        border-radius: 0.8rem;
+        border: none;
+        background-color: red;
+        color: maroon;
+        position: absolute;
+        height: 80%;
+        width: 2.5rem;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .btn-complete {
+        right: 6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: limegreen;
+        color: beige;
+    }
+    .btn-delete {
+        right: 0;
+    }
+    .btn-edit {
+        right: 3rem;
+    }
+    .btn-edit:hover {
+        color: red;
+        background-color: maroon;
+    }
+
+    .btn-complete:hover {
+        color: limegreen;
+        background-color: beige;
+    }
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+}

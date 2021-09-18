@@ -1,0 +1,9 @@
+@mixin device($screenWidth, $font-size) {
+    @media (min-width: $screenWidth) {
+        html {
+            font-size: $font-size;
+        }
+    }
+}
+
+@include device(800px, 10px);
