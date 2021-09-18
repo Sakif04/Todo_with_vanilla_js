@@ -109,8 +109,7 @@ i {
         padding: 0.3rem;
         border-radius: 0.8rem;
         border: none;
-        background-color: red;
-        color: maroon;
+
         position: absolute;
         height: 80%;
         width: 2.5rem;
@@ -126,14 +125,18 @@ i {
         color: beige;
     }
     .btn-delete {
+        background-color: red;
+        color: maroon;
         right: 0;
     }
     .btn-edit {
+        color: white;
+        background-color: #000;
         right: 3rem;
     }
     .btn-edit:hover {
-        color: red;
-        background-color: maroon;
+        color: #000;
+        background-color: #fff;
     }
 
     .btn-complete:hover {
