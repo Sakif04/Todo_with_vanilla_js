@@ -9,11 +9,23 @@
 body {
     color: beige;
     height: 100vh;
+    margin: 1rem;
 }
 
 #tasklist {
+    height: 98vh;
     background: $grotto;
+
+    #todo-header {
+        height: 30vh;
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url("../images/Landscape-Color.jpg");
+        background-position: center;
+    }
     #header {
+        color: $purple;
         margin: 30px auto;
         font-size: 3rem;
         text-align: center;
@@ -21,7 +33,7 @@ body {
     padding: 2rem;
     width: 80vw;
     margin: auto;
-    border: 0.3rem solid purple;
+    border: 0.3rem solid $purple;
     .fa-plus-square:before {
         font-size: 2rem;
     }
@@ -123,28 +135,32 @@ i {
         transform: translateY(-50%);
         background-color: limegreen;
         color: beige;
+        &:hover {
+            color: limegreen;
+            background-color: beige;
+        }
     }
     .btn-delete {
         background-color: red;
         color: maroon;
         right: 0;
+        &:hover {
+            color: red;
+            background-color: maroon;
+            right: 0;
+        }
     }
     .btn-edit {
         color: white;
         background-color: #000;
         right: 3rem;
+        &:hover {
+            color: #000;
+            background-color: #fff;
+        }
     }
-    .btn-edit:hover {
-        color: #000;
-        background-color: #fff;
-    }
-
-    .btn-complete:hover {
-        color: limegreen;
-        background-color: beige;
-    }
-    .completed {
-        text-decoration: line-through;
-        opacity: 0.5;
-    }
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }

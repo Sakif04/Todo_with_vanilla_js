@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   html {
     font-size: 10px;
   }
@@ -15,17 +15,29 @@
 body {
   color: beige;
   height: 100vh;
+  margin: 1rem;
 }
 
 #tasklist {
+  height: 98vh;
   background: #189ab4;
   padding: 2rem;
   width: 80vw;
   margin: auto;
-  border: 0.3rem solid purple;
+  border: 0.3rem solid #0e0246;
+}
+
+#tasklist #todo-header {
+  height: 30vh;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/Landscape-Color.jpg");
+  background-position: center;
 }
 
 #tasklist #header {
+  color: #0e0246;
   margin: 30px auto;
   font-size: 3rem;
   text-align: center;
@@ -150,9 +162,20 @@ i {
   color: beige;
 }
 
+.item .btn-complete:hover {
+  color: limegreen;
+  background-color: beige;
+}
+
 .item .btn-delete {
   background-color: red;
   color: maroon;
+  right: 0;
+}
+
+.item .btn-delete:hover {
+  color: red;
+  background-color: maroon;
   right: 0;
 }
 
@@ -167,12 +190,7 @@ i {
   background-color: #fff;
 }
 
-.item .btn-complete:hover {
-  color: limegreen;
-  background-color: beige;
-}
-
-.item .completed {
+.completed {
   text-decoration: line-through;
   opacity: 0.5;
 }

@@ -22,6 +22,7 @@ const createItems = function (e) {
         saveLocalItem(inputvalue);
         generatelist(inputvalue);
     }
+    input.value = "";
 };
 
 const saveLocalItem = function (item) {
@@ -88,6 +89,7 @@ const buttonEffects = function (e) {
         });
     } else if (clickedElement.classList.contains("btn-complete")) {
         let item = e.target.parentElement;
+        console.log(item);
         item.classList.toggle("completed");
     } else return;
 };
