@@ -1,5 +1,5 @@
 @mixin device($screenWidth, $font-size) {
-    @media (min-width: $screenWidth) {
+    @media (max-width: $screenWidth) {
         html {
             font-size: $font-size;
         }
