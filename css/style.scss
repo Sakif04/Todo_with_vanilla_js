@@ -17,8 +17,10 @@ body {
     background: $grotto;
 
     #todo-header {
-        height: 30vh;
+        display: flex;
+        height: 20vh;
         width: 100%;
+        align-items: center;
         background-size: 100%;
         background-repeat: no-repeat;
         background-image: url("../images/Landscape-Color.jpg");
@@ -28,6 +30,7 @@ body {
         color: $purple;
         margin: 30px auto;
         font-size: 3rem;
+        align-items: center;
         text-align: center;
     }
     padding: 2rem;
@@ -70,7 +73,7 @@ body {
         #list-input {
             border: none;
             color: cadetblue;
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 1000;
             text-align: center;
             height: 4rem;

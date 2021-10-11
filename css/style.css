@@ -2,6 +2,14 @@
   html {
     font-size: 10px;
   }
+  #todo-header {
+    height: 2rem;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Landscape-Color.jpg");
+    background-position: center;
+  }
 }
 
 * {
@@ -28,8 +36,14 @@ body {
 }
 
 #tasklist #todo-header {
-  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../images/Landscape-Color.jpg");
@@ -40,6 +54,9 @@ body {
   color: #0e0246;
   margin: 30px auto;
   font-size: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -85,7 +102,7 @@ body {
 #tasklist #list #list-input {
   border: none;
   color: cadetblue;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 1000;
   text-align: center;
   height: 4rem;
