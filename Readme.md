@@ -6,6 +6,6 @@
 - _Edit items of the list_
 - _Filter items by completed and uncompleted tasks_
 
-[Preview Link]()
+[Preview Link](https://sakif04.github.io/Todo_with_vanilla_js/)
 
-![Benjamin Bannekat](./images/todolist.png)
+![Benjamin Bannekat](/images/todolist.png)
