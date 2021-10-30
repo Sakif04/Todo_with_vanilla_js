@@ -8,4 +8,4 @@
 
 [Preview Link](https://sakif04.github.io/Todo_with_vanilla_js/)
 
-![Benjamin Bannekat](/images/todolist.png)
+![todolist](./images/todolist.png)
