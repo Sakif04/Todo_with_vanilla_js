@@ -8,4 +8,4 @@
 
 [Preview Link]()
 
-![Benjamin Bannekat](./public/todolist.png)
+![Benjamin Bannekat](./images/todolist.png)
