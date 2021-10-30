@@ -8,4 +8,4 @@
 
 [Preview Link](https://sakif04.github.io/Todo_with_vanilla_js/)
 
-![todolist](https://github.com/Sakif04/Todo_with_vanilla_js/blob/main/images/todolist.png)
+![todolist](https://github.com/Sakif04/Todo_with_vanilla_js/blob/main/images/todolist.PNG)
